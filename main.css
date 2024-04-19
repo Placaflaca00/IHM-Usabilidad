@@ -82,3 +82,75 @@ a:hover {
     width: 100%;
     height: 100%;
 }
+
+/* Restablece la sangría de la lista y elimina estilos predeterminados */
+ul.main-sections, .sub-sections, .inner-sub-sections {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/* Espacio entre las secciones principales */
+ul.main-sections > li {
+    margin-bottom: 20px; /* Ajusta al espacio deseado */
+}
+
+/* Sangría para las subsecciones */
+.sub-sections {
+    padding-left: 20px; /* Ajusta la sangría deseada */
+}
+
+/* Sangría para las sub-subsecciones si es necesario */
+.inner-sub-sections {
+    padding-left: 20px; /* Ajusta la sangría adicional si es necesario */
+}
+
+.img-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Esto alinea los elementos al comienzo de su contenedor, ayudando a alinear los enlaces de texto correctamente debajo de las imágenes. */
+    flex-wrap: wrap; /* Esto permite que los elementos se envuelvan si no hay suficiente espacio horizontal. */
+}
+
+.img-container .image-item {
+    width: 20%; /* El ancho de cada 'image-item' será el 20% del contenedor padre, asegurando que todos tengan el mismo tamaño. */
+    box-sizing: border-box; /* Esto asegura que el padding y el border estén incluidos en el ancho total del elemento. */
+    padding: 5px; /* Añade un poco de espacio alrededor de cada elemento para evitar que se toquen. */
+}
+
+.img-container .image-item img {
+    width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor '.image-item'. */
+    height: auto; /* La altura se ajustará automáticamente para mantener la proporción de la imagen. */
+    display: block; /* Esto asegura que la imagen no tenga espacio adicional debajo, lo cual es común con las imágenes en línea. */
+}
+
+.img-container .image-item a {
+    text-align: center; /* Centra el texto del enlace debajo de la imagen. */
+    display: block; /* Hace que el enlace sea un bloque para que tome su propio espacio y no esté en línea con otros elementos. */
+    margin-top: 8px; /* Añade un margen en la parte superior para separar la imagen del enlace. */
+    color: #000; /* Color del texto para los enlaces. */
+    text-decoration: none; /* Elimina el subrayado del enlace. */
+    font-size: 0.9em; /* Ajusta el tamaño de la fuente del enlace si es necesario. */
+}
+.add-button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s;
+}
+
+.add-button:hover {
+    background-color: #45a049; /* Un verde más oscuro */
+}
+
+.add-button i {
+    margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
