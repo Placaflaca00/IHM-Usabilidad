@@ -1,34 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Manual de Usabilidad</title>
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
 </head>
+
 <body>
     <header>
         <h1>Manual de Usabilidad del Sistema</h1>
     </header>
     <section id="introduction">
         <h2>Introducción</h2>
-        <p>
-            Este manual tiene como objetivo guiar a los usuarios en el uso eficiente y efectivo del sistema. Aquí encontrarás todas las instrucciones necesarias para manejar el sistema adecuadamente y resolver cualquier duda que pueda surgir durante su uso.
-        </p>
+        <p>En un mundo cada vez más digitalizado, la importancia de una interacción efectiva entre usuarios y sistemas
+            informáticos se ha vuelto crítica para el éxito de cualquier proyecto tecnológico. Este documento busca
+            explorar de manera integral el desarrollo, diseño y evaluación de interfaces de usuario, enfocándose no solo
+            en la funcionalidad, sino también en la experiencia completa del usuario. Nuestro recorrido comienza con los
+            <strong>Conceptos Básicos</strong>, donde definiremos el campo de aplicación de la interfaz y experiencia de
+            usuario, y discutiremos su importancia estratégica en el desarrollo de software.</p>
+
+        <p>A continuación, profundizaremos en el <strong>Diseño y Experiencia del Usuario</strong>, abordando los
+            fundamentos de la experiencia del usuario (UX), los principios del diseño interactivo, y la accesibilidad y
+            navegación como pilares para crear aplicaciones inclusivas y eficientes. En la sección de
+            <strong>Visualización y Contenidos</strong>, analizaremos cómo los contenidos deben ser presentados y
+            adaptados a diversos dispositivos a través del diseño responsivo, asegurando una experiencia visual
+            coherente y efectiva.</p>
+
+        <p>En el capítulo de <strong>Elementos y Estrategias de Interfaz de Usuario</strong>, discutiremos los
+            componentes críticos que conforman las interfaces de usuario y exploraremos estrategias avanzadas para
+            optimizar la interacción y la usabilidad. La sección de <strong>Evaluación y Mejora</strong> está dedicada a
+            las técnicas y herramientas para evaluar la usabilidad de las interfaces, incluyendo evaluaciones
+            heurísticas y métodos innovadores como 'Think Out Loud' y UserTesting.</p>
+
+        <p>Finalmente, abordaremos las <strong>Consideraciones Legales y Éticas</strong>, un área frecuentemente
+            subestimada pero de vital importancia en el diseño de sistemas interactivos, donde la legislación vigente y
+            los aspectos éticos deben guiar cada paso del proceso de diseño y desarrollo.</p>
+
+        <p>Este documento no solo es una guía para diseñadores y desarrolladores de software, sino también una
+            herramienta esencial para cualquier profesional que aspire a entender y mejorar la manera en que
+            interactuamos con la tecnología en nuestra vida diaria. A través de este análisis exhaustivo, aspiramos a
+            equipar a los profesionales con el conocimiento necesario para crear interfaces que no solo cumplan con los
+            requisitos técnicos, sino que también proporcionen experiencias enriquecedoras y accesibles para todos los
+            usuarios.</p>
+
     </section>
     <section id="index">
         <h2>Índice</h2>
-        <ul>
-            <li><a href="#" onclick="loadContent('basic')">Conceptos Básicos</a></li>
-            <li><a href="#" onclick="loadContent('interaction')">Interacción con el Sitio</a></li>
+        <ul class="main-sections">
+            <li><a href="#" onclick="loadContent('basic')">1. Conceptos Básicos</a>
+                <ul class="sub-sections">
+                    <li>1.1 Definición y Campo de Aplicación</li>
+                    <li>1.2 Importancia Estratégica en el Desarrollo de Software</li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="loadContent('design')">2. Diseño y Experiencia del Usuario</a>
+                <ul class="sub-sections">
+                    <li>2.1 Fundamentos de la Experiencia del Usuario (UX)</li>
+                    <li>2.2 Diseño Interactivo</li>
+                    <li>2.3 Accesibilidad y Navegación</li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="loadContent('visualization')">3. Visualización y Contenidos</a>
+                <ul class="sub-sections">
+                    <li>3.1 Contenidos y Visualización</li>
+                    <li>3.2 Aspectos Técnicos del Diseño Responsivo</li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="loadContent('interface_elements')">4. Elementos y Estrategias de Interfaz de Usuario</a>
+                <ul class="sub-sections">
+                    <li>4.1 Elementos de Interfaz de Usuario (UI)</li>
+                    <li>4.2 Estrategias Avanzadas y Optimización</li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="loadContent('evaluation')">5. Evaluación y Mejora</a>
+                <ul class="sub-sections">
+                    <li>5.1 Evaluación Heurística</li>
+                    <li>5.2 Herramientas y Técnicas Especiales
+                        <ul class="inner-sub-sections">
+                            <li>5.2.1 Método Think Out Loud</li>
+                            <li>5.2.2 UserTesting</li>
+                            <li>5.2.3 Método de Cuestionarios</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#" onclick="loadContent('legal_ethical')">6. Consideraciones Legales y Éticas</a>
+                <ul class="sub-sections">
+                    <li>6.1 Legislación y Aspectos Éticos</li>
+                </ul>
+            </li>
         </ul>
     </section>
+    
     <section id="content">
         <h2>Bienvenido al Manual de Usabilidad</h2>
-        <p>Seleccione un tema del índice para comenzar.</p>
+        <p>Este manual ha sido diseñado para proporcionar una guía clara y accesible sobre la interacción efectiva con interfaces de usuario. Para navegar por este manual, simplemente haga clic en los ítems del índice que se encuentran a continuación. Cada selección lo llevará directamente a la sección correspondiente, donde se detallan los conceptos y metodologías esenciales para una comprensión profunda del tema.</p>
+        <p>Quiero agradecer especialmente a Ana Barreto, Matias Garay y Bella Benitez por su invaluable ayuda y contribuciones en la creación de este manual. Sin su apoyo, este recurso no sería tan completo y enriquecedor.</p>
+        <p>Creado por Mohammed Moussa.</p>
     </section>
     <footer>
         <p>&copy; 2024 Manual de Usabilidad. Todos los derechos reservados.</p>
     </footer>
 </body>
+
 </html>
