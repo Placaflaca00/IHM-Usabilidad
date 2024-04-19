@@ -1,41 +1,118 @@
 function loadContent(section) {
     const contentElement = document.getElementById('content');
 
-    // Primero se desplaza hasta el elemento para una transición suave
-    contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-    // Retraso en la actualización del contenido para sincronizar con el desplazamiento
     setTimeout(() => {
         if (section === 'basic') {
             contentElement.innerHTML = `
-            <h2>Qué es la Usabilidad</h2>
-            <p>Mucho se recuerda cómo hace años, cuando en los hogares comenzaban a hacerse presentes las primeras computadoras personales y en los entornos laborales la automatización de procesos era la novedad, se incorporó un nuevo término al vocabulario: <strong>“amigable”</strong>.</p>
-            <p>Este se utilizaba para referirse a aquellas aplicaciones software en las que su uso, al menos, no terminaba provocándonos un dolor de cabeza o un estado de interminable frustración.</p>
-            <p>Este término fue progresivamente mutando hacia otro, usabilidad, un anglicismo (usability) que se refiere a la facilidad de uso de las aplicaciones, herramientas o productos interactivos. Este cambio terminológico no obedecía a una moda, sino a la intención de definir, delimitar y clarificar uno de los atributos de calidad de los productos interactivos que mayor impacto tienen en la satisfacción del usuario y la aceptación social del “producto”.</p>
-            <h2>Entonces, ¿qué es la usabilidad?</h2>
-            <p>Fundamentalmente, la usabilidad se refiere a la facilidad de uso, de cómo el diseño de un producto cualquiera facilita o dificulta su utilización. La Organización Internacional de Normalización (ISO) 9241-11 la define como la medida en la cual un producto puede ser utilizado por determinados usuarios para conseguir objetivos específicos con efectividad, eficiencia y satisfacción, en un contexto de uso determinado.</p>
-            <p>Si hablamos de usabilidad aplicada al entorno web, Jakob Nielsen la entiende como un atributo de calidad que evalúa la facilidad de uso de las interfaces de usuario. También se refiere a los métodos que podemos aplicar para mejorar esta facilidad de uso durante el proceso de diseño. Nielsen define la usabilidad a partir de cinco elementos:</p>
+            <h1>1.1 Definición y Campo de Aplicación de la Usabilidad</h1>
+            <h2>Definición:</h2>
+            <p>La usabilidad se define como la medida en la que un producto puede ser utilizado por usuarios específicos para alcanzar objetivos concretos con efectividad, eficiencia y satisfacción en un contexto específico de uso. Esta definición se enfoca en la experiencia del usuario al interactuar con el sistema y abarca tres componentes principales:</p>
             <ul>
-                <li><strong>Facilidad de aprendizaje:</strong> hasta qué punto es fácil para los usuarios realizar las tareas básicas cuando se enfrentan por primera vez a un diseño.</li>
-                <li><strong>Efficiency:</strong> una vez que los usuarios han aprendido el diseño, con qué rapidez realizan las tareas.</li>
-                <li><strong>Facilidad para ser recordado:</strong> cuando los usuarios han dejado de interactuar con ese diseño durante un tiempo, cuánto les cuesta recordar cómo se utilizaba.</li>
-                <li><strong>Errores:</strong> cuántos errores cometen los usuarios, y si pueden resolverlos fácilmente.</li>
-                <li><strong>Satisfacción:</strong> si es agradable utilizar el diseño, si los elementos están fácilmente localizables, si ayuda o dificulta la realización de las tareas, y si los usuarios volverían a utilizar ese diseño.</li>
+                <li><strong>Efectividad:</strong> Precisión y completitud con las que los usuarios logran ciertos objetivos.</li>
+                <li><strong>Eficiencia:</strong> Relación entre la precisión y la completitud de los objetivos alcanzados y los recursos empleados para conseguirlos.</li>
+                <li><strong>Satisfacción:</strong> Comodidad y actitudes positivas hacia el uso del producto.</li>
             </ul>
-            <h2>Video para Esfuerzo</h2>
-            <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/Y7nLeu4cY38?autoplay=1&mute=1" 
-                    title="YouTube video player" frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen></iframe>
-        </div>`;
-        } else if (section === 'interaction') {
+            <h2>Campo de Aplicación:</h2>
+            <p>La usabilidad es crucial en el diseño y desarrollo de cualquier producto interactivo, como sitios web, software de escritorio, aplicaciones móviles, y sistemas operativos, entre otros. Se aplica en diversos campos como el comercio electrónico, la educación, la salud, y el entretenimiento, buscando siempre mejorar la experiencia del usuario para que sea más intuitiva, accesible y agradable.</p>
+            
+            <h1>1.2 Importancia Estratégica en el Desarrollo de Software</h1>
+            <p>La usabilidad en el desarrollo de software es de importancia estratégica por varias razones:</p>
+            <ul>
+                <li><strong>Competitividad:</strong> Un software con alta usabilidad mejora la satisfacción del usuario, lo que puede traducirse en una ventaja competitiva significativa. Los productos fáciles de usar atraen y retienen a más usuarios.</li>
+                <li><strong>Productividad:</strong> Software con buena usabilidad aumenta la productividad de los usuarios al reducir el tiempo y el esfuerzo necesarios para completar tareas.</li>
+                <li><strong>Costos de soporte:</strong> Mejorar la usabilidad puede reducir los costos asociados al soporte técnico, ya que un diseño intuitivo disminuye la necesidad de ayuda externa.</li>
+                <li><strong>Accesibilidad:</strong> Considerar la usabilidad implica diseñar para todos los usuarios, incluyendo aquellos con discapacidades, lo cual es crucial para la inclución y el cumplimiento de normativas legales.</li>
+                <li><strong>Reduccion de errores:</strong> Sistemas usables minimizan el riesgo de errores por parte de los usuarios, lo que es vital en áreas críticas como la banca en línea y la medicina.</li>
+                <h2>Video para Esfuerzo</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Y7nLeu4cY38?autoplay=1&mute=1" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+                `;
+        } else if (section === 'design') {
             contentElement.innerHTML = `
-            <h2>La experiencia del usuario</h2>
-            <p>Ocurre muy a menudo que se intenta buscar algo en concreto en una página web y no se encuentra. Puede semejarse a buscar un producto en particular en un supermercado; dependiendo de cuál sea su distribución, se puede llegar a pasar más de cinco minutos buscándolo, mientras se pregunta si no hubiera sido mejor situarlo junto a los productos de higiene en vez de la sección de alimentación. Estos 5 minutos alguien puede perderse en un supermercado, pero en el mundo de internet el escenario es distinto, ya que un usuario que no encuentre lo que busca en pocos segundos, abandonará la página.</p>
-            <p>En este sentido, cada usuario interactuará con los contenidos del sitio en función de la necesidad de información; esta será la que condicione el comportamiento de búsqueda. Así, la búsqueda de información conocida es diferente que la búsqueda de información sobre un tema desconocido por el usuario. Esta diferencia es determinante en las prioridades de nuestros usuarios y por lo tanto debe ser tenida en cuenta al estructurar la información en el espacio Web.</p>
-            <h2>Navegabilidad</h2>
-            <p>Se trata de la navegabilidad del sitio: un sitio debe ser cómodo para el usuario, debe ser fácilmente navegable, el usuario tiene que poder ir de un lado a otro del sitio rápidamente y sin perderse. Así, llegamos a un principio básico de la usabilidad: el usuario no tiene tiempo, y menos para estar adivinando cuál es la manera de llegar a los diferentes contenidos de nuestras webs. La navegabilidad es un elemento muy importante en todo sitio y debe ser igual en cada parte del mismo. Es un elemento de la usabilidad que debe ser tomado en cuenta a la hora de planificar cualquier sitio web.</p>`;
+            <h1>2. Diseño y Experiencia del Usuario</h1>
+            <img src="Img/diseno-de-experiencia-de-usuario.jpg" alt="Diseño de Experiencia de Usuario" width="500" height="300">
+            <h2>2.1 Fundamentos de la Experiencia del Usuario (UX)</h2>
+            <ul>
+                <li><strong>Investigación del usuario:</strong> Comprende a tus usuarios objetivo modelando sus roles, comportamientos y objetivos. Utiliza técnicas como las entrevistas etnográficas para desarrollar "personas" que representen a los usuarios típicos.</li>
+                <li><strong>Diseño de interacción:</strong> Se enfoca en crear interfaces intuitivas donde los elementos de la interfaz se autoexpliquen. Prioriza la simplicidad y la eficiencia, basándote en principios de diseño estándar y accesibilidad.</li>
+                <li><strong>Evaluación de la usabilidad:</strong> Implementa pruebas de usabilidad y utiliza herramientas automáticas para medir y mejorar la interacción del usuario con el sitio web. La iteración es clave: evalúa, recibe feedback y ajusta el diseño repetidamente.</li>
+            </ul>
+            <h2>2.2 Diseño Interactivo</h2>
+            <ul>
+                <li><strong>Arquitectura de la información:</strong> Organiza la información de manera lógica y fácil de navegar. Usa etiquetas claras y consistentes para los enlaces y menús de navegación.</li>
+                <li><strong>Diseño de legibilidad:</strong> El contenido debe ser fácil de leer y escanear. Utiliza tipografías claras y adecuadas, y asegúrate de que los contrastes de color faciliten la lectura.</li>
+                <li><strong>Diseño de búsqueda:</strong> Implementa un sistema de búsqueda eficiente y conforme a las expectativas de los usuarios. Considera la optimización del motor de búsqueda para mejorar la visibilidad y accesibilidad del sitio.</li>
+            </ul>
+            <h2>2.3 Accesibilidad y Navegación</h2>
+            <ul>
+                <li><strong>Accesibilidad:</strong> Asegúrate de que tu sitio web sea accesible para todos los usuarios, incluyendo aquellos con discapacidades. Implementa las directrices de accesibilidad web (WCAG) para garantizar que todos los usuarios puedan interactuar efectivamente con tu sitio.</li>
+                <li><strong>Navegación consistente:</strong> Proporciona una experiencia de navegación fluida y predecible. Utiliza un diseño de navegación coherente en todas las páginas y asegúrate de que los enlaces sean claros y visibles.</li>
+                <li><strong>Respuesta a la interacción:</strong> Cada acción del usuario debe recibir una respuesta inmediata y clara. Las transiciones y los efectos visuales deben reforzar la comprensión del usuario sobre la interacción.</li>
+            </ul>
+            <h2>Las 12 Leyes para UX & UI</h2>
+            <div class="video-container">
+                    <iframe src="https://youtube.com/embed/ABggYX2jOsM" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+                `;
+        }else if (section === 'visualization'){
+            contentElement.innerHTML = `
+            <h1>3. Visualización y Contenidos</h1>
+            <h2>3.1 Contenidos y Visualización</h2>
+            <p>Esta sección profundiza en la importancia de diseñar contenidos que sean accesibles y comprensibles para los usuarios, con énfasis en cómo se estructura y presenta la información en los sitios web. Los aspectos clave podrían incluir:</p>
+            <ul>
+                <li><strong>Arquitectura de la Información:</strong>Asegurar que el contenido esté organizado lógicamente y sea fácil de navegar.</li>
+                <p><strong>Por ejemplo:</strong></p>
+                <div class="img-container">
+                <div class="image-item">
+                    <a href="https://es.wikipedia.org" target="_blank">
+                        <img src="Img/wikipedia.jpg" alt="Wikipedia">
+                    </a>
+                    <a href="https://es.wikipedia.org">Visitar Wikipedia</a>
+                </div>
+
+                <div class="image-item">
+                    <a href="https://www.amazon.com" target="_blank">
+                        <img src="Img/amazon.webp" alt="Amazon">
+                    </a>
+                    <a href="https://www.amazon.com">Visitar Amazon</a>
+                </div>
+
+                <div class="image-item">
+                    <a href="https://www.bbc.com" target="_blank">
+                        <img src="Img/BBC.jpg" alt="BBC">
+                    </a>
+                    <a href="https://www.bbc.com">Visitar BBC News</a>
+                </div>
+
+                <div class="image-item">
+                    <a href="https://www.airbnb.com" target="_blank">
+                        <img src="Img/airbnb.png" alt="Airbnb">
+                    </a>
+                    <a href="https://www.airbnb.com">Visitar Airbnb</a>
+                </div>
+                </div>
+
+                <li><strong>Diseño Visual:</strong> Uso de elementos visuales que mejoran la interacción del usuario sin sobrecargarlo o confundirlo, <strong>por ejemplo</strong>; Iconos claros y consistentes :<i class="fas fa-home"></i><i class="fas fa-search"></i> <button class="add-button"><i class="fas fa-plus"></i> Agregar</button></li>
+                <li><strong>Estrategia de Contenido:</strong> Técnicas para crear y gestionar contenidos que satisfagan las necesidades del usuario, apoyando la usabilidad al hacer que la información importante sea fácil de encontrar y comprender.</li>
+            </ul>
+            <h2>3.2 Aspectos Técnicos del Diseño Responsivo</h2>
+            <p>Esta sección probablemente discute los enfoques técnicos para hacer que los sitios web funcionen eficazmente en diversos dispositivos y tamaños de pantalla, lo cual es crucial para el diseño web moderno. Los puntos clave podrían incluir:</p>
+            <ul>
+                <li><strong>Técnicas de Diseño Responsivo:</strong> Métodos como los layouts de rejilla fluida, imágenes flexibles y consultas de medios CSS que permiten que los diseños se adapten a diferentes entornos de pantalla.</li>
+                <li><strong>Optimización del Rendimiento:</strong> Técnicas para asegurar que el sitio web se cargue rápidamente y de manera fluida en todos los dispositivos, lo cual es crucial para la usabilidad.</li>
+                <li><strong>Compatibilidad Entre Dispositivos:</strong> Asegurar que el sitio web ofrezca una experiencia de usuario consistente en diferentes dispositivos y navegadores, incluyendo el manejo de interfaces táctiles frente a no táctiles y variaciones en las capacidades de los dispositivos.</li>
+            </ul>
+
+            `;
         }
-    }, 200); // Ajusta este tiempo si es necesario para sincronizar con la velocidad de desplazamiento
+        // Ahora desplazamos después de actualizar el contenido
+        contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 300); // Ajusta este tiempo si es necesario para sincronizar con la velocidad de desplazamiento
 }
