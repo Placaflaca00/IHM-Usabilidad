@@ -134,7 +134,50 @@ function loadContent(section) {
                 <li><strong>Accesibilidad:</strong> Asegurar que la interfaz sea accesible para todos los usuarios, incluyendo aquellos con discapacidades, es fundamental. Esto implica un diseño que considere el contraste adecuado entre colores, uso de etiquetas apropiadas para tecnología asistiva, y alternativas textuales para contenido multimedia</li>
             </ul>
             `;
-        }
+        }else if (section === 'evaluation'){
+            contentElement.innerHTML=`
+            
+            `;
+        }else if (section === 'legal_ethical'){
+            contentElement.innerHTML=`
+            <h1>6. Consideraciones Legales y Éticas</h1>
+            <h2>Documentos Clave</h2>
+            <ul>
+                <li>
+                    <strong>Declaración Universal sobre Bioética y Derechos Humanos de UNESCO:</strong> Este documento subraya la importancia de compartir el conocimiento y sus beneficios, promoviendo el bienestar colectivo y el respeto por la diversidad cultural y ambiental a través de la cooperación internacional.
+                </li>
+                <li>
+                    <strong>Convenio sobre Servicios de Salud en el Trabajo 161 de 1985:</strong> Establece directrices claras para la promoción de la salud y la seguridad en el lugar de trabajo, traduciendo principios éticos en protecciones legales específicas para los trabajadores.
+                </li>
+                <li>
+                    <strong>Declaración Global de los Principios Éticos del Trabajo Social:</strong> Destaca los valores de respeto por la equidad, reconocimiento de la dignidad y fomento de la justicia social, esenciales en la creación y aplicación de políticas sociales y legislativas.
+                </li>
+            </ul>
+
+            <h2>Principios en Contabilidad</h2>
+            <p>
+                En contabilidad, principios como integridad, objetividad, competencia profesional y cuidado, confidencialidad y comportamiento profesional (IFAC) son fundamentales para garantizar que las prácticas no solo cumplan con la ley, sino que también promuevan la confianza y la responsabilidad pública.
+            </p>
+
+            <h2>Influencia de Pensadores en Ética y Legislación</h2>
+            <p>
+                Antonio Argandoña y otros pensadores en el campo de la responsabilidad social corporativa discuten cómo la ética mejora nuestras prácticas legislativas y empresariales. Argandoña enfatiza que la ética debe ser una guía para una buena gestión y toma de decisiones empresariales.
+            </p>
+
+            <h2>Tensiones en la Práctica</h2>
+            <p>
+                Las tensiones entre principios éticos y realidades prácticas son especialmente evidentes en áreas como la auditoría y la contabilidad, donde la independencia y la objetividad pueden verse comprometidas por intereses económicos significativos o relaciones a largo plazo con clientes.
+            </p>
+
+            <h2>Frases Inspiradoras</h2>
+            <blockquote>
+                "La ética es el fundamento de la confianza en las sociedades modernas." — Antonio Argandoña.
+            </blockquote>
+            <blockquote>
+                "No hay nada práctico como una buena teoría." — frase que refleja la importancia de la ética teórica en la aplicación práctica de la legislación.
+            </blockquote>
+            `;
+        }   
         // Ahora desplazamos después de actualizar el contenido
         contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 300); // Ajusta este tiempo si es necesario para sincronizar con la velocidad de desplazamiento
