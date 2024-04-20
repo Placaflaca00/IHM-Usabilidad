@@ -223,8 +223,17 @@ blockquote {
 }
 
 @media (max-width: 768px) {
-    /* Estilos para teléfonos móviles */
     .img-container .image-item {
-        width: 100%; /* Ajusta para que cada elemento ocupe el ancho completo en móviles */
+        width: 100%; /* Asegúrate de que las imágenes no se estiren más allá de su ancho original */
+    }
+
+    .img-container .image-item img {
+        max-width: 100%; /* Se asegura de que la imagen sea responsiva y no exceda el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
+    /* Propiedades de optimización de rendimiento */
+    .img-container .image-item img {
+        will-change: transform; /* Avisa al navegador de los cambios para optimizar */
     }
 }
