@@ -111,8 +111,35 @@ function loadContent(section) {
             </ul>
 
             `;
+        }else if (section === 'interface_elements'){
+            contentElement.innerHTML=`
+            <h1>4. Elementos y Estrategias de Interfaz de Usuario</h1>
+            <h2>4.1 Elementos de Interfaz de Usuario (UI)</h2>
+            <ul>
+                <li><strong>Diseño Estructural:</strong> Se refiere al marco conceptual del diseño de interfaz, incluyendo la lógica de operación y estética de la interfaz.</li>
+                <li><strong>Diseño Interactivo:</strong> Enfocado en la facilidad de uso del producto y la interacción hombre-máquina, incluyendo comunicación efectiva y comportamiento interactivo consistente.</li>
+                <li><strong>Diseño Visual:</strong> Trata sobre la estética visual, incluyendo colores, fuentes y otros elementos gráficos para crear una interfaz agradable y coherente.</li>
+            </ul>
+            <h2>Para leer mas</h2>
+
+            <iframe src="https://ovacen.com/diseno-interfaz-usuario-ui/" width="80%" height="800px" frameborder="0" scrolling="yes" style="display: block; margin: auto;"></iframe>
+
+            
+            <h2>4.2 Elementos Avanzados y Estrategias de Optimización para UI</h2>
+            <ul>
+                <li><strong>Principios de Usabilidad de Jakob Nielsen:</strong> Estos son directrices claves para mejorar la experiencia del usuario, como la visibilidad del estado del sistema, consistencia y estándares, y ayuda y documentación. Estos principios ayudan a diseñar interfaces que son intuitivas y fáciles de usar.</li>
+                <li><strong>Funciones Principales de la UI:</strong> La interfaz de usuario debería facilitar la comunicación entre el usuario y el sistema, permitir la personalización del entorno del usuario según sus preferencias, y ofrecer un sistema de control de acceso para garantizar la seguridad, entre otros.</li>
+                <li><strong>Tipos de Interfaces de Usuario:</strong> Las interfaces pueden ser de hardware, software, o una combinación de ambas. Las interfaces gráficas de usuario (GUI) son las más comunes y permiten interactuar a través de elementos visuales como botones e íconos, mientras que las interfaces de línea de comandos (CLI) son basadas en texto</li>
+                <li><strong>Importancia del Diseño Visual:</strong> Un diseño visual atractivo es crucial. Debe ser minimalista, evitando elementos innecesarios que puedan confundir al usuario, y usar colores y fuentes que mejoren la legibilidad y la jerarquía visual de la información.</p>
+                <li><strong>Accesibilidad:</strong> Asegurar que la interfaz sea accesible para todos los usuarios, incluyendo aquellos con discapacidades, es fundamental. Esto implica un diseño que considere el contraste adecuado entre colores, uso de etiquetas apropiadas para tecnología asistiva, y alternativas textuales para contenido multimedia</li>
+            </ul>
+            `;
         }
         // Ahora desplazamos después de actualizar el contenido
         contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 300); // Ajusta este tiempo si es necesario para sincronizar con la velocidad de desplazamiento
+}
+
+function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
 }
