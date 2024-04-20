@@ -154,3 +154,19 @@ ul.main-sections > li {
 .add-button i {
     margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
+
+iframe {
+    display: block;
+    margin: auto;
+    width: 75%; /* O el ancho que prefieras */
+    height: 500px; /* O la altura que prefieras */
+}
+
+
+
+@media (max-width: 768px) {
+    iframe {
+        width: 95%;
+        height: 600px;
+    }
+}
