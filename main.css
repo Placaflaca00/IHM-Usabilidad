@@ -155,6 +155,7 @@ ul.main-sections > li {
     margin-right: 5px; /* Espacio entre el ícono y el texto */
 }
 
+
 iframe {
     display: block;
     margin: auto;
@@ -168,5 +169,62 @@ iframe {
     iframe {
         width: 95%;
         height: 600px;
+    }
+}
+
+#index {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 600px; /* Ajusta la anchura máxima del índice para una mejor legibilidad */
+}
+
+#index h2 {
+    color: #2c3e50; /* Color oscuro para el título del índice */
+}
+
+#index ul {
+    padding-left: 0; /* Remueve el padding predeterminado */
+    list-style-type: none; /* Remueve los puntos del listado */
+}
+
+#index li {
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+
+#index a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #3498db; /* Color azul para los enlaces */
+}
+
+#index .main-sections > li {
+    padding-left: 20px; /* Espacio inicial para las secciones principales */
+}
+
+#index .sub-sections {
+    padding-left: 40px; /* Mayor espacio para sub-secciones */
+}
+
+#index .inner-sub-sections {
+    padding-left: 60px; /* Aún más espacio para las sub-sub-secciones */
+}
+
+
+blockquote {
+    margin: 20px 10px; /* Márgenes alrededor del blockquote */
+    padding: 20px; /* Espacio interior */
+    border-left: 5px solid #3498db; /* Borde izquierdo grueso y de color azul */
+    background-color: #f9f9f9; /* Color de fondo muy suave */
+    font-style: italic; /* Texto en cursiva para destacar la cita */
+    font-size: 1.1em; /* Ligeramente mayor tamaño de texto */
+}
+
+@media (max-width: 992px) {
+    /* Estilos para tablets */
+}
+
+@media (max-width: 768px) {
+    /* Estilos para teléfonos móviles */
+    .img-container .image-item {
+        width: 100%; /* Ajusta para que cada elemento ocupe el ancho completo en móviles */
     }
 }
