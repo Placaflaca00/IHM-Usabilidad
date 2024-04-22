@@ -136,48 +136,186 @@ function loadContent(section) {
             `;
         }else if (section === 'evaluation'){
             contentElement.innerHTML=`
-            
-            `;
-        }else if (section === 'legal_ethical'){
-            contentElement.innerHTML=`
-            <h1>6. Consideraciones Legales y Éticas</h1>
-            <h2>Documentos Clave</h2>
+            <h1>5. Evaluación y Mejora</h1>
+            <h2>5.1 Evaluación Heurística</h2>
+            <p><strong>Evaluación heurística </strong> es una técnica cualitativa que permite obtener información sobre el funcionamiento de un producto y su cumplimiento de objetivos. A través de este método, se identifican las áreas de mejora en la usabilidad del producto y se generan recomendaciones para optimizar la experiencia del usuario.</p> 
+
+            <h3>Paso a paso</h3> 
+
+            <h4>Primer paso: Definición de objetivos </h4>
+
+            <p>Debes colaborar con el cliente para establecer los objetivos de la evaluación, identificando las áreas clave del producto que se evaluarán y estableciendo su prioridad. También es importante definir las tareas necesarias para alcanzar estos objetivos, así como los indicadores que se utilizarán para medir su cumplimiento y el estado actual del producto.</p>
+
+            <p>Ejemplo</p>
+
+            <p>Imagina que estás trabajando en el desarrollo de un nuevo sitio web para una tienda en línea. Tu cliente quiere mejorar la experiencia de usuario y aumentar las conversiones. Juntos, establecen los siguientes objetivos para la evaluación de usabilidad:</p>
+
             <ul>
-                <li>
-                    <strong>Declaración Universal sobre Bioética y Derechos Humanos de UNESCO:</strong> Este documento subraya la importancia de compartir el conocimiento y sus beneficios, promoviendo el bienestar colectivo y el respeto por la diversidad cultural y ambiental a través de la cooperación internacional.
-                </li>
-                <li>
-                    <strong>Convenio sobre Servicios de Salud en el Trabajo 161 de 1985:</strong> Establece directrices claras para la promoción de la salud y la seguridad en el lugar de trabajo, traduciendo principios éticos en protecciones legales específicas para los trabajadores.
-                </li>
-                <li>
-                    <strong>Declaración Global de los Principios Éticos del Trabajo Social:</strong> Destaca los valores de respeto por la equidad, reconocimiento de la dignidad y fomento de la justicia social, esenciales en la creación y aplicación de políticas sociales y legislativas.
-                </li>
+            <li>Aumentar la tasa de conversión en un 20% en los próximos 6 meses.</li>
+            <li>Reducir el abandono del carrito de compras en un 15%.</li>
+            <li>Mejorar la navegación del sitio para facilitar la búsqueda de productos.</li>
+            <li>Asegurar que el proceso de pago sea intuitivo y sin problemas.</li>
+            <li>Identificar y corregir cualquier problema de usabilidad que pueda afectar la satisfacción del usuario.</li>
             </ul>
 
-            <h2>Principios en Contabilidad</h2>
-            <p>
-                En contabilidad, principios como integridad, objetividad, competencia profesional y cuidado, confidencialidad y comportamiento profesional (IFAC) son fundamentales para garantizar que las prácticas no solo cumplan con la ley, sino que también promuevan la confianza y la responsabilidad pública.
-            </p>
+            <h4>Segundo paso: Perfiles de usuario</h4>
 
-            <h2>Influencia de Pensadores en Ética y Legislación</h2>
-            <p>
-                Antonio Argandoña y otros pensadores en el campo de la responsabilidad social corporativa discuten cómo la ética mejora nuestras prácticas legislativas y empresariales. Argandoña enfatiza que la ética debe ser una guía para una buena gestión y toma de decisiones empresariales.
-            </p>
+            <p>Una vez definidos los objetivos, es fundamental comprender a quién está dirigido el producto y quiénes serán los usuarios principales. Deberás identificar los diferentes perfiles de usuarios y las tareas asociadas a cada uno de ellos. Es común que haya varios tipos de usuarios, por lo que es importante personalizar estas descripciones utilizando la técnica de personas.</p>
 
-            <h2>Tensiones en la Práctica</h2>
-            <p>
-                Las tensiones entre principios éticos y realidades prácticas son especialmente evidentes en áreas como la auditoría y la contabilidad, donde la independencia y la objetividad pueden verse comprometidas por intereses económicos significativos o relaciones a largo plazo con clientes.
-            </p>
+            <p>Aquí se podría usar la técnica de personas, donde se junta todas las características de los diferentes usuarios y se crea un perfil que imita a la persona real.</p>
 
-            <h2>Frases Inspiradoras</h2>
-            <blockquote>
-                "La ética es el fundamento de la confianza en las sociedades modernas." — Antonio Argandoña.
-            </blockquote>
-            <blockquote>
-                "No hay nada práctico como una buena teoría." — frase que refleja la importancia de la ética teórica en la aplicación práctica de la legislación.
-            </blockquote>
+            <img src="Img/Imagen1.png" alt="#" width="500" height="300">
+
+            <p><strong>Ejemplo</strong></p>
+
+            <p>Después de definir los objetivos, te centras en comprender a los usuarios del sitio web. Identificas tres perfiles de usuarios principales:</p>
+
+            <ul>
+            <li>Compradores habituales: Personas que visitan el sitio con frecuencia para realizar compras.</li>
+            <li>Nuevos visitantes: Personas que llegan al sitio por primera vez en busca de productos específicos.</li>
+            <li>Exploradores: Personas que navegan por el sitio sin una intención de compra clara, pero podrían convertirse en clientes en el futuro.</li>
+            </ul>
+
+            <p>Para cada perfil de usuario, identificas las tareas que podrían realizar, como buscar un producto, agregarlo al carrito, completar el proceso de pago, etc.</p>
+
+            <h4>Tercer paso: Las tareas</h4>
+
+            <p>Para asegurar una evaluación completa, debes definir detalladamente las tareas que realizarán los usuarios durante la evaluación. Esto incluye la descripción de las tareas, sus objetivos comerciales asociados y las partes más importantes de las funcionalidades que serán revisadas.</p>
+
+            <p>Con base en los perfiles de usuario, defines las tareas específicas que cada grupo realizará durante la evaluación de usabilidad. Por ejemplo:</p>
+
+            <ul>
+            <li>Compradores habituales: Realizar una compra de principio a fin, incluyendo la búsqueda de productos, la selección de tallas y colores, y el pago.</li>
+            <li>Nuevos visitantes: Encontrar un producto específico utilizando la barra de búsqueda y agregarlo al carrito.</li>
+            <li>Exploradores: Navegar por las diferentes categorías de productos y añadir varios artículos al carrito para evaluar la experiencia de compra.</li>
+            </ul>
+
+            <h4>Cuarto paso: Análisis de criterios generales y específicos</h4>
+
+            <p>Durante la evaluación, deberás analizar una variedad de criterios que van desde aspectos generales como la identificación y el lenguaje, hasta cuestiones específicas como la ayuda y la accesibilidad del producto. Utiliza una lista de criterios predefinidos para guiar tu análisis y asigna una puntuación a cada uno de ellos para facilitar la interpretación de los resultados.</p>
+
+            <p>Algunos ejemplos de criterios generales y específicos podrían incluir:</p>
+
+            <ul>
+            <li><strong>Identificación:</strong>
+                <ul>
+                <li>¿Es claro el logo de la marca y ayuda a los usuarios a identificar el sitio web?</li>
+                <li>¿La navegación principal es fácil de encontrar y entender?</li>
+                </ul>
+            </li>
+            <li><strong>Lenguaje:</strong>
+                <ul>
+                <li>¿El texto en el sitio web es claro y fácil de entender para los usuarios?</li>
+                <li>¿Se utilizan términos técnicos o jerga que puedan confundir a los usuarios?</li>
+                </ul>
+            </li>
+            <li><strong>Ayuda:</strong>
+                <ul>
+                <li>¿El sitio web proporciona suficiente información de ayuda para los usuarios, como preguntas frecuentes o tutoriales?</li>
+                <li>¿Se ofrece soporte en línea, como chat en vivo o asistencia por correo electrónico, para resolver las dudas de los usuarios?</li>
+                </ul>
+
+            </li>
+            <li><strong>Accesibilidad:</strong>
+                <ul>
+                <li>¿El sitio web cumple con las pautas de accesibilidad web, como la capacidad de navegar utilizando solo el teclado?</li>
+                <li>¿Se proporcionan opciones de personalización, como el cambio de tamaño de fuente o contraste, para usuarios con necesidades específicas?</li>
+                </ul>
+                <img src="Img/img3.jpg" alt="#" width="500" height="300">
+            </li>
+            <li><strong>Llamadas a la acción:</strong>
+
+                <ul>
+                    <li>¿Las llamadas a la acción, como "Agregar al carrito" o "Comprar ahora", son claras y visibles?</li>
+                    <li>¿Están ubicadas estratégicamente en el sitio para impulsar la conversión?</li>
+                </ul>
+            </li>
+
+            <li><strong>Proceso de pago:</strong>
+
+                <ul>
+                    <li>¿El proceso de pago es intuitivo y fácil de seguir?</li>
+                    <li>¿Se proporciona retroalimentación clara sobre el progreso del usuario durante el proceso de pago?</li>
+                </ul>
+            </li>
+
+            </ul>
+
+            <p>Al analizar estos criterios y asignarles una puntuación del 1 al 5, podrás identificar áreas específicas de mejora en la usabilidad del sitio web y generar recomendaciones para optimizar la experiencia del usuario.</p>
+
+            <h4>Quinto paso: Recomendaciones</h4>
+
+            <p>Una vez completada la evaluación, deberás preparar y presentar recomendaciones basadas en los hallazgos. Esto incluye identificar y destacar las debilidades encontradas en la interfaz y el proceso, especialmente aquellos elementos que puedan afectar negativamente la experiencia del usuario. Además de un informe detallado, considera también preparar una presentación ejecutiva que resuma los hallazgos y las recomendaciones de manera concisa.</p>
+
+            <p>Ejemplos</p>
+
+            <ul>
+                <li>Simplificar el proceso de pago mediante la eliminación de pasos innecesarios.</li>
+                <li>Mejorar la visibilidad de las opciones de navegación para facilitar la búsqueda de productos.</li>
+                <li>Optimizar el diseño del carrito de compras para hacerlo más intuitivo y fácil de usar.</li>
+                <li>Implementar pruebas de usuario adicionales para validar las recomendaciones y realizar ajustes según sea necesario.</li>
+            </ul>
+            <h2>5.2 Herramientas y Técnicas Especiales</h2>
+            <h2>5.2.1 Método Think Out Loud</h2>
+            <p>Es una técnica utilizada en los tests de usabilidad para observar y comprender el proceso de pensamiento de los usuarios mientras interactúan con un producto. Esta técnica permite a los moderadores obtener información valiosa sobre las dificultades que encuentran los usuarios, sus estrategias para resolver problemas y sus opiniones sobre la experiencia general.</p>
+            <h2>5.2.2 UserTesting</h2>
+            <h3>Pasos para utilizar la función de grabado con User testing</h3>
+
+            <ol>
+                <li>Delegar permisos de audio y video</li>
+                <img src="Img/Imagen2.png" alt="#" width="429" height="451">
+                <li>Realizar un chequeo de micrófono</li>
+                <img src="Img/Imagen3.png" alt="#" width="442" height="210">
+                <li>Seguir las instrucciones de la herramienta: La herramienta reconocerá el contenido de la página web e irá haciéndote preguntas interactivas, las cuales debes ir respondiendo con completa franqueza</li>
+                <img src="Img/Imagen4.png" alt="#" width="527" height="356">
+                <li>Interactuar con el producto: Expresa tus pensamientos y sentimientos en voz alta mientras interactúas con el producto.</li>
+                <img src="Img/Imagen5.png" alt="#" width="605" height="415">
+                <li>Realizar las tareas que pide el test: La herramienta te pedirá buscar un botón aleatorio y tomara en cuenta el tiempo que hayas tardado en encontrar ese botón para determinar qué tan fácil es de encontrar</li>
+                <img src="Img/Imagen6.png" alt="#" width="360" height="171">
+                <img src="Img/Imagen8.png" alt="#" width="350" height="230">
+            </ol>
+
+            <h4>Consejos adicionales:</h4>
+
+            <ul>
+            <li>Habla con claridad y en voz alta para que tu audio se grabe correctamente.</li>
+            <li>Mantén tu rostro visible en la cámara para que se puedan captar tus expresiones faciales.</li>
+            <li>Sé honesto y sincero en tus respuestas.</li>
+            <li>No tengas miedo de expresar tus frustraciones o dificultades.</li>
+            <li>Cuanta más información proporciones, más valiosa será la evaluación de la usabilidad.</li>
+            </ul>
+
+            <h2>5.2.3 Método de Cuestionarios</h2>
+
+            <p>En el ámbito de la evaluación de sistemas interactivos hablamos de cuestionarios para referirnos a listas de preguntas que el evaluador distribuye entre usuarios y/o implicados para que éstos nos las devuelvan respuestas y, así, poder extraer conclusiones. El cuestionario normalmente se distribuye en formato escrito y las preguntas plantean aspectos relacionados con el sistema o aplicación concreta.</p>
+
+            <p>Así pues, la base del cuestionario es la recolección de información a partir de respuestas contestadas por los usuarios y/o los implicados.</p>
+
+            <h3>Paso a paso</h3>
+
+            <il>
+                <li><strong>Paso 1:</strong> Definir los objetivos de la evaluación de usabilidad. Antes de crear cualquier cuestionario, es crucial entender qué aspectos específicos del sistema interactivo deseas evaluar. Esto podría incluir la facilidad de uso, la eficiencia, la satisfacción del usuario, entre otros. Establecer objetivos claros ayudará a guiar el diseño del cuestionario.</li>
+                <li><strong>Paso 2: Diseñar el cuestionario</strong>
+                    <ol type="a">
+                        <li>Identificar las partes del cuestionario: Basándote en la información proporcionada, divide el cuestionario en tres secciones: pre-tarea, post-tarea y post-test. La sección pre-tarea recopilará información sobre el perfil del usuario. La sección post-tarea se repetirá para cada tarea realizada por el usuario y recopilará datos específicos sobre la experiencia de usuario durante esas tareas. La sección post-test recogerá percepciones generales sobre la experiencia global del usuario con el sistema interactivo.</li>
+                        <li>Seleccionar tipos de preguntas: Utiliza una combinación de preguntas de carácter general, preguntas abiertas, preguntas de tipo escalar, opciones múltiples y preguntas ordenadas para recopilar una amplia gama de datos sobre la usabilidad del sistema.</li>
+                    </ol>
+                </li>
+                <li><strong>Paso 3: Elaborar las preguntas</strong>
+                    <ol type="a">
+                        <li>Preguntas de carácter general: Incluye preguntas sobre el perfil del usuario, como edad, sexo, ocupación, etc., para entender mejor a quiénes estás evaluando.</li>
+                        <li>Preguntas específicas de la experiencia del usuario: Diseña preguntas que aborden aspectos clave de la usabilidad, como la facilidad de uso, la eficacia en la realización de tareas y la satisfacción general.</li>
+                        <li>Preguntas post-tarea: Crea preguntas específicas para cada tarea que los usuarios realicen durante la evaluación. Estas preguntas deben centrarse en la experiencia del usuario mientras completan la tarea asignada.</li>
+                    </ol>
+                </li>
+                <li><strong>Paso 4: Validar el cuestionario</strong> Antes de distribuir el cuestionario, realiza una revisión para asegurarte de que las preguntas sean claras, relevantes y no sesgadas. También puedes realizar pruebas piloto con un grupo pequeño de usuarios para identificar cualquier problema potencial con el cuestionario.</li>
+                <li><strong>Paso 5: Distribuir el cuestionario</strong> Una vez validado, distribuye el cuestionario a los usuarios que participarán en la evaluación de usabilidad. Puedes hacerlo en formato impreso o electrónico, según sea más conveniente para tus usuarios.</li>
+                <li><strong>Paso 6: Analizar los resultados</strong> Recopila y analiza las respuestas de los usuarios para identificar patrones, tendencias y áreas de mejora en la usabilidad del sistema interactivo. Utiliza herramientas de análisis estadístico si es necesario para obtener conclusiones significativas.</li>
+                <li><strong>Paso 7: Iterar y mejorar</strong> Utiliza los resultados de la evaluación de usabilidad para realizar mejoras en el sistema interactivo. Este proceso iterativo garantizará que el producto final sea más fácil de usar y satisfactorio para los usuarios.</li>
+            </il>
+
             `;
-        }   
+        }  
         // Ahora desplazamos después de actualizar el contenido
         contentElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, 300); // Ajusta este tiempo si es necesario para sincronizar con la velocidad de desplazamiento
