@@ -237,6 +237,11 @@ blockquote {
         font-size: 14px; /* Reducción del tamaño de la fuente en dispositivos móviles */
         padding: 8px 16px;
     }
+
+    img { /* Esto asegura que todas las imágenes sean responsivas */
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .center-image {
