@@ -12,8 +12,7 @@ function loadContent(section) {
                 <li><strong>Eficiencia:</strong> Relación entre la precisión y la completitud de los objetivos alcanzados y los recursos empleados para conseguirlos.</li>
                 <li><strong>Satisfacción:</strong> Comodidad y actitudes positivas hacia el uso del producto.</li>
             </ul>
-            <h2>Campo de Aplicación:</h2>
-            <p>La usabilidad es crucial en el diseño y desarrollo de cualquier producto interactivo, como sitios web, software de escritorio, aplicaciones móviles, y sistemas operativos, entre otros. Se aplica en diversos campos como el comercio electrónico, la educación, la salud, y el entretenimiento, buscando siempre mejorar la experiencia del usuario para que sea más intuitiva, accesible y agradable.</p>
+            
             
             <h1>1.2 Importancia Estratégica en el Desarrollo de Software</h1>
             <p>La usabilidad en el desarrollo de software es de importancia estratégica por varias razones:</p>
@@ -122,7 +121,7 @@ function loadContent(section) {
             </ul>
             <h2>Para leer mas</h2>
 
-            <iframe src="https://ovacen.com/diseno-interfaz-usuario-ui/" width="80%" height="800px" frameborder="0" scrolling="yes" style="display: block; margin: auto;"></iframe>
+            <iframe src="https://ovacen.com/diseno-interfaz-usuario-ui/" width="80%" height="800px" frameborder="1" scrolling="yes" style="display: block; margin: auto;"></iframe>
 
             
             <h2>4.2 Elementos Avanzados y Estrategias de Optimización para UI</h2>
@@ -139,7 +138,7 @@ function loadContent(section) {
             <h1>5. Evaluación y Mejora</h1>
             <h2>5.1 Evaluación Heurística</h2>
             <p><strong>Evaluación heurística </strong> es una técnica cualitativa que permite obtener información sobre el funcionamiento de un producto y su cumplimiento de objetivos. A través de este método, se identifican las áreas de mejora en la usabilidad del producto y se generan recomendaciones para optimizar la experiencia del usuario.</p> 
-
+            <img src="Img/heuristicas-de-usabilidad.png" alt="#" width="600" height="372">
             <h3>Paso a paso</h3> 
 
             <h4>Primer paso: Definición de objetivos </h4>
@@ -286,7 +285,9 @@ function loadContent(section) {
             </ul>
 
             <h2>5.2.3 Método de Cuestionarios</h2>
-
+            
+            <img src="Img/523.png" alt="#" width="600" height="424">
+            
             <p>En el ámbito de la evaluación de sistemas interactivos hablamos de cuestionarios para referirnos a listas de preguntas que el evaluador distribuye entre usuarios y/o implicados para que éstos nos las devuelvan respuestas y, así, poder extraer conclusiones. El cuestionario normalmente se distribuye en formato escrito y las preguntas plantean aspectos relacionados con el sistema o aplicación concreta.</p>
 
             <p>Así pues, la base del cuestionario es la recolección de información a partir de respuestas contestadas por los usuarios y/o los implicados.</p>
@@ -294,18 +295,18 @@ function loadContent(section) {
             <h3>Paso a paso</h3>
 
             <il>
-                <li><strong>Paso 1:</strong> Definir los objetivos de la evaluación de usabilidad. Antes de crear cualquier cuestionario, es crucial entender qué aspectos específicos del sistema interactivo deseas evaluar. Esto podría incluir la facilidad de uso, la eficiencia, la satisfacción del usuario, entre otros. Establecer objetivos claros ayudará a guiar el diseño del cuestionario.</li>
+                <li><strong>Paso 1:</strong>Definir los objetivos de la evaluación de usabilidad. Antes de crear cualquier cuestionario, es crucial entender qué aspectos específicos del sistema interactivo deseas evaluar. Esto podría incluir la facilidad de uso, la eficiencia, la satisfacción del usuario, entre otros.</li>
                 <li><strong>Paso 2: Diseñar el cuestionario</strong>
                     <ol type="a">
-                        <li>Identificar las partes del cuestionario: Basándote en la información proporcionada, divide el cuestionario en tres secciones: pre-tarea, post-tarea y post-test. La sección pre-tarea recopilará información sobre el perfil del usuario. La sección post-tarea se repetirá para cada tarea realizada por el usuario y recopilará datos específicos sobre la experiencia de usuario durante esas tareas. La sección post-test recogerá percepciones generales sobre la experiencia global del usuario con el sistema interactivo.</li>
-                        <li>Seleccionar tipos de preguntas: Utiliza una combinación de preguntas de carácter general, preguntas abiertas, preguntas de tipo escalar, opciones múltiples y preguntas ordenadas para recopilar una amplia gama de datos sobre la usabilidad del sistema.</li>
+                        <li><strong>Identificar las partes del cuestionario:</strong>Divide el cuestionario en tres secciones: pre-tarea, post-tarea y post-test. La sección pre-tarea recopila información del perfil del usuario. La sección post-tarea se enfoca en la experiencia durante las tareas. La sección post-test evalúa la experiencia global del usuario.</li>
+                        <li><strong>Seleccionar tipos de preguntas:</strong> Utiliza preguntas generales, abiertas, escalares, opciones múltiples y ordenadas para obtener datos sobre la usabilidad del sistema.</li>
                     </ol>
                 </li>
                 <li><strong>Paso 3: Elaborar las preguntas</strong>
                     <ol type="a">
-                        <li>Preguntas de carácter general: Incluye preguntas sobre el perfil del usuario, como edad, sexo, ocupación, etc., para entender mejor a quiénes estás evaluando.</li>
-                        <li>Preguntas específicas de la experiencia del usuario: Diseña preguntas que aborden aspectos clave de la usabilidad, como la facilidad de uso, la eficacia en la realización de tareas y la satisfacción general.</li>
-                        <li>Preguntas post-tarea: Crea preguntas específicas para cada tarea que los usuarios realicen durante la evaluación. Estas preguntas deben centrarse en la experiencia del usuario mientras completan la tarea asignada.</li>
+                        <li><strong>Preguntas de carácter general:</strong>Incluye preguntas sobre el perfil del usuario, como edad, sexo, ocupación, etc., para entender mejor a quiénes estás evaluando.</li>
+                        <li><strong>Preguntas específicas de la experiencia del usuario:</strong> Diseña preguntas que aborden aspectos clave de la usabilidad, como la facilidad de uso, la eficacia en la realización de tareas y la satisfacción general.</li>
+                        <li><strong>Preguntas post-tarea:</strong> Crea preguntas específicas para cada tarea que los usuarios realicen durante la evaluación. Estas preguntas deben centrarse en la experiencia del usuario mientras completan la tarea asignada.</li>
                     </ol>
                 </li>
                 <li><strong>Paso 4: Validar el cuestionario</strong> Antes de distribuir el cuestionario, realiza una revisión para asegurarte de que las preguntas sean claras, relevantes y no sesgadas. También puedes realizar pruebas piloto con un grupo pequeño de usuarios para identificar cualquier problema potencial con el cuestionario.</li>
